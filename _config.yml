@@ -13,15 +13,15 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Dora Qian
-  tagline: Developer. Designer
+  tagline: Foodie,Developer,Dog Lover
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
   # generate social links in footer
   social_links:
-    twitter: doraqmon
+    twitter: 
     github:  doraqmon
-    linkedIn: doraqmon
+    linkedIn: 
     rss: rss
     # dribbble: jekyll
     # facebook: jekyll
