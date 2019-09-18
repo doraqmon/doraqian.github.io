@@ -2,7 +2,7 @@
 layout: post
 title:  "Fun Facts About French Bulldog"
 date:   2019-09-17 21:03:36 +0530
-categories: Javascript NodeJS
+categories: FrenchBulldog Dog
 ---
 
 French bulldogs are so cute and make a great companions for families. There are some fun facts about them that you might not know!
