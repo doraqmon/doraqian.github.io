@@ -10,6 +10,7 @@ French bulldogs are so cute and make a great companions for families. There are 
 #### They are good at frog pose 
 
 They are called "Frog dog " because they always sit with their legs split out.
+
 ![config.yml](http://www.allstarfrenchbulldogs.com/Bogey10wksDeck-3.jpg)
 
 #### They were bred to make people happy
