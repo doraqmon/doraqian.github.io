@@ -60,7 +60,7 @@ In the real world, the dataset is much more complicated and the distribution we 
 
 Below is a visualized MLE process of a Gaussian distribution with unknown mean. The estimated mean of 2 happened at the highest point of the log-likelihood function, which is equal to the true mean which created the data histogram. [1]
 
-![alt text](./imgs/GaussianPlot.gif)
+![config.yml](https://github.com/doraqmon/doraqian.github.io/blob/master/GaussianPlot.gif?raw=true)
 
 ## Application of MLE in Machine Learning
 
@@ -69,9 +69,9 @@ MLE has a broad application in Machine Learning. In general, we are given a set 
 The magic behind this is that the machine assumes a (linear or non-linear) relationship between the X’s and Y’s, and ties to optimize the parameters in this relationship. To optimize the parameters, MLE is used. Depending on the problem and the algorithm used, MLE can be called from only once, on the simplest linear regression, to over a million times, on a complicated deep learning problem. In short, MLE is the building block in Machine Learning.
 
 The following plot is an example of a data set that shows a linear relationship between the independent variable x and dependent variable y. [2]
-![alt text](./imgs/linearbefore.png)
+![config.yml](https://github.com/doraqmon/doraqian.github.io/blob/master/linearbefore.png?raw=true)
 After applying MLE, the plot of the linear regression model is shown below. 
-![alt text](./imgs/linearafter.png)
+![config.yml](https://github.com/doraqmon/doraqian.github.io/blob/master/linearafter.png?raw=true)
 
 ### Reference
 Wikipedia, Maximum Likelihood Estimation, https://en.wikipedia.org/wiki/Maximum_likelihood_estimation  
