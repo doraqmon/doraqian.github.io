@@ -1,0 +1,80 @@
+---
+layout: post
+title:  "Fun Facts About French Bulldog"
+date:   2019-09-17 21:03:36 +0530
+categories: FrenchBulldog Dog
+---
+![config.yml](http://www.allstarfrenchbulldogs.com/Bogey10wksDeck-3.jpg)
+# What is Maximum Likelihood Estimation?
+
+Maximum Likelihood Estimation (MLE)  is a commonly used approach for estimating the parameters of a given data set. In both the statistics and machine learning world, MLE is a fundamental method to find the best fitting model of an observed dataset.
+
+## The MLE Approach
+Maximum likelihood estimation is a useful and powerful tool in statistics and machine learning. The results are data-driven so the more data we fit in the model, the accurate our results are. 
+
+In order to incorporate MLE into our data science project, we can take the following 4 steps:
+* Determine the distribution to treat data
+* Define the likelihood function 
+* Use MLE to calculate the estimated value of parameters
+* Use MLE solution for prediction or other objectives
+
+
+
+## Likelihood Function and Basic Calculation
+
+As explained in Wikipedia,
+> “the likelihood function expresses how probable a given set of observations is for different values of the statistical parameters." 
+
+We can think likelihood function  L(θ;x), as the function of parameters vector θ gave an observed data set x. The goal is to find the value of θ which maximizes the likelihood.
+
+For both discrete and continuous distributions,  the likelihood of a random variable x with probability mass/density function of parameter θ can be written as : 
+
+$$ L_X(\theta) = P(X|\theta) = \prod_{x\in X}^{}f(x|\theta)$$
+
+In our example of coin flip, the likelihood function is :
+
+$$ L_X(p) = P(X|p) = \prod_{x\in X}^{}p^x (1-p)^{1-x} = p^h (1-p)^{n-h} $$
+
+Since the individual likelihood is normally small numbers,  their product can be very small as well. As logarithms is a monotonic function, we use log-likelihood instead of likelihood function to calculate the maximum of the probability function.
+
+$$ l_X(\theta) = \sum_{x \in X}log[f(x|\theta)]$$
+
+So the log-likelihood of coin flip can be calculated as :
+
+$$ l_X(p) = h log(p) + (n-h) log(1-p)$$
+
+To find the best parameter estimator that maximizes the log-likelihood function, we need to take the differentiation with respect to the parameter and set it equal to 0.
+
+$$ l'(p) = \frac{h}{p} - \frac{n-h}{1-p} = 0$$
+$$ p = \frac{h}{n}$$
+
+This makes perfect sense as the probability of seeing an “H” is just the number of heads divided by the number of flips.
+
+Implementing MLE using languages (e.g. R and Python) can easily be achieved by importing packages.
+
+## Fitting Model to Data
+
+Let us consider a simple example of flipping a coin. The outcome of the coin flip is either head (H) with a probability of p or tails (T) with the probability of (1-p). The Bernoulli distribution can be used in this case. Since Bernoulli distribution only has one parameter, the simplest way to estimate p is by flipping the coin many times and count the number of heads.
+
+In the real world, the dataset is much more complicated and the distribution we selected might have multiple parameters. Therefore, we can use the MLE method to fit the model to data. 
+
+Below is a visualized MLE process of a Gaussian distribution with unknown mean. The estimated mean of 2 happened at the highest point of the log-likelihood function, which is equal to the true mean which created the data histogram. [1]
+
+![alt text](./imgs/GaussianPlot.gif)
+
+## Application of MLE in Machine Learning
+
+MLE has a broad application in Machine Learning. In general, we are given a set of labelled data and are trying to let the machine to find a pattern on the data. More precisely, the data set should consist of a set of corresponding X’s and Y’s, where X’s are the input attributes, and Y’s are the outcomes. The machine should find the relationship between the X’s and Y’s and thus be able to predict a new Y for a new X.  
+
+The magic behind this is that the machine assumes a (linear or non-linear) relationship between the X’s and Y’s, and ties to optimize the parameters in this relationship. To optimize the parameters, MLE is used. Depending on the problem and the algorithm used, MLE can be called from only once, on the simplest linear regression, to over a million times, on a complicated deep learning problem. In short, MLE is the building block in Machine Learning.
+
+The following plot is an example of a data set that shows a linear relationship between the independent variable x and dependent variable y. [2]
+![alt text](./imgs/linearbefore.png)
+After applying MLE, the plot of the linear regression model is shown below. 
+![alt text](./imgs/linearafter.png)
+
+### Reference
+Wikipedia, Maximum Likelihood Estimation, https://en.wikipedia.org/wiki/Maximum_likelihood_estimation  
+Wikipedia, Likelihood Function, https://en.wikipedia.org/wiki/Likelihood_function  
+[1] William Fleshman (2019 Feb 3rd) Fundamentals of Machine Learning (Part 2), https://towardsdatascience.com/maximum-likelihood-estimation-984af2dcfcac  
+[2] William Fleshman (2019 Feb 10th) Linear Regression, https://towardsdatascience.com/linear-regression-91eeae7d6a2e  
