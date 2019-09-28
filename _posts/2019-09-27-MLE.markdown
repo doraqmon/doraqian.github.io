@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Fun Facts About French Bulldog"
-date:   2019-09-17 21:03:36 +0530
-categories: FrenchBulldog Dog
+title:  "What is Maximum Likelihood Estimation"
+date:   2019-09-27 21:03:36 +0530
+categories: Data Science
 ---
-![config.yml](http://www.allstarfrenchbulldogs.com/Bogey10wksDeck-3.jpg)
+
 # What is Maximum Likelihood Estimation?
 
 Maximum Likelihood Estimation (MLE)  is a commonly used approach for estimating the parameters of a given data set. In both the statistics and machine learning world, MLE is a fundamental method to find the best fitting model of an observed dataset.
