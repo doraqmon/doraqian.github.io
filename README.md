@@ -106,8 +106,9 @@ To add a custom directory to your theme-gem, please edit the regexp in `plainwhi
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The theme is available as open source under the terms ofDDD the [MIT License](https://opensource.org/licenses/MIT).
 
 ## More themes
 
 - [Texture](https://github.com/thelehhman/texture)
+
