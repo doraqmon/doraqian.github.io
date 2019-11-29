@@ -19,15 +19,12 @@
 |Team Member| Task assigned | Due Date|
 |---|---|---|
 |Mike Chen| Bar graph| Nov 25th, 2019|
+||Reflection part of Milestone 2| Nov 28th, 2019|
 |Alexander Hinton| Map|Nov 25th, 2019|
+|| Layout of app| Nov 28th, 2019|
 |Andrea Lee| Heat Map| Nov 25th, 2019|
+|| Callback functions and fix issues |Nov 28th, 2019|
 |Yingping Qian| Trend Plot| Nov 25th, 2019|
-
-
-
-Mike Chen, Alexander Hinton, Andrea Lee, Yingping Qian
+||Fix issues and update team contract|Nov 28th, 2019|
 
 ### Remember to have fun!
-
-
--Team work contract could be more specific: What are tasks? Who takes which jobs? When are they due?
